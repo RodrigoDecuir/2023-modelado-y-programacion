@@ -19,5 +19,5 @@
 ```
 
 ```sh
-💲 instructores: <Rosa Victoria Villa Padilla> <Arturo Lemus Pablo>
+instructores: <Rosa Victoria Villa Padilla> <Arturo Lemus Pablo>
 ```

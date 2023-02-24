@@ -6,28 +6,67 @@ import java.util.LinkedList;
  */
 public class Escenario() {
     LinkedList<Espectador> espectadores = new LinkedList<Espectador>(); 
-    
-    public LinkedList<Espectador> get() {
+    LinkedList<Personaje> personajes = new LinkedList<Personaje>(); 
+    String movimientos; 
+    /**
+     * Metodo que regresa la lista de espectadores.
+     * @return lista de espectadores
+     */
+    public LinkedList<Espectador> getEspectadores() {
         return espectadores;
     }
-
-    public String get() {
-        return 
+    /**
+     * Metodo que regresa la lista de personajes.
+     * @return lista de personajes
+     */ 
+    public LinkedList<Personaje> getPersonajes() {
+        return personajes;
     }
-
-    public void set() {
-         
+   
+    /**
+     * Metodo que regresa el movimiento actual.
+     * @return movimiento actual
+     */ 
+    public String getMovimientos() {
+        return movimiento; 
     }
-
-    public void registrar() {
-
+    
+    /**
+     * Metodo que modifica los movimientos. 
+     */
+    public void setMovimientos(String nuevoMovimiento) {
+        movimiento = nuevoMovimiento; 
     }
-
-    public void remover() {
-
+    
+    /**
+     * Metodo que registra un espectador al escenario.
+     * @param b espectador por registrar 
+     */
+    public void registrar(Espectador b) {
+        espectador.add(b);
+        System.out.println(" ");
     }
-
+    
+    /**
+     * Metodo que remueve a un espectador del escenario.
+     * @param b espectador por remover
+     */
+    public void remover(Espectador b) {
+        System.out.println(" ");
+        espectador.remove(b);
+    }
+    
+    /**
+     * Metodo que notifica a los espectadores del escenario.
+     */
     public void notificar() {
+        if(espectador.size() > 0) {
+            System.out.println("
 
+                   ");
+            for(Espectador b: espectadores) {
+                b.actualizar();
+            }
+        }
     }
 }

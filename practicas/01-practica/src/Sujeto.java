@@ -1,9 +1,6 @@
 /**
- * Interfaz que contiene la 
- * infraestructura de suscripcion.
- *
+ * Interfaz que contiene la infraestructura de suscripcion.
  * @author tukuwanaminaku
- *
  */
 
 public interface Sujeto() {

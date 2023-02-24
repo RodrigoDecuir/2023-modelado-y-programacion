@@ -7,8 +7,7 @@ import java.io*;
 public class Espectador() {
     private String id_Espectador;
     private String apuesta;
-    private Escenario verEscenario;
-    private String historia;
+    private Escenario castilloDePeach;
     private String movimiento;
 
     /**
@@ -18,13 +17,14 @@ public class Espectador() {
         this.id_Espectador = id_Espectador;
         this.apuesta = apuesta;
         this.castilloDePeach = castilloDePeach;
+        this.movimiento = movimiento;
     }
     /**
-     * Metodo para  
+     * Metodo para enviar al espectador el movimiento actual o mas reciente del combate.
      */
     @Override
     public void actualizar() {
-     
+         
     }
     
     /**
@@ -42,16 +42,9 @@ public class Espectador() {
     }
     
     /**
-     *
-     */
-    public String obtenerHistoria() {
-        return historia;
-    }
-    
-    /**
      * 
      */
-    public void dejarDeVerEscenario() {
+    public void verMovimiento() {
      
     }
 }

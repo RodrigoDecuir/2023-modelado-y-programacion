@@ -17,14 +17,16 @@ public class Espectador() {
         this.id_Espectador = id_Espectador;
         this.apuesta = apuesta;
         this.castilloDePeach = castilloDePeach;
-        this.movimiento = movimiento;
+        castilloDePeach.registrar(this);
+        movimiento = castilloDePeach.obtenerMovimiento;
     }
     /**
      * Metodo para enviar al espectador el movimiento actual o mas reciente del combate.
      */
     @Override
     public void actualizar() {
-         
+        movimiento = castilloDePeach.obtenerMovimiento; 
+        verMovimiento();
     }
     
     /**
@@ -45,6 +47,8 @@ public class Espectador() {
      * 
      */
     public void verMovimiento() {
-     
+        System.out.println("APUESTA A: " + apuesta
+               + "\nESPECTADOR: " + id_Espectador
+               + "\nCOMBATE: \n" + movimiento); 
     }
 }

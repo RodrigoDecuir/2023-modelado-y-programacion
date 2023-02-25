@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 
 /**
- * Clase para
+ * Clase para 
  * @author tukuwanaminaku
  */
 public class Escenario implements Sujeto {

@@ -1,5 +1,6 @@
 public interface MeganManAtaque {
-	public String mostrarInformacion();
     public String nombreAtaque();
+    public String obtenerDescripcion();
     public void ataque(Personaje enemigo);
+    public int defender();
 }

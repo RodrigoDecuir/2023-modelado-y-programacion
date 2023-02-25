@@ -5,6 +5,7 @@
  */
 public class SuperSmashBrus {   
     public static void main(String[] args) { 
+
         Escenario castilloDePeach = new Escenario();
          
         /* Objeto de contexto. */

@@ -3,7 +3,7 @@ public class MeganMan {
     private int puntosAtaque;
     private MeganManAtaque meganMan;
 
-    public MeganMan( );
+    public MeganMan();
 
     public ataque(String nombreAtaque, int puntosAtaque) {
     
@@ -12,12 +12,16 @@ public class MeganMan {
     public void atacar(Personaje enemigo) {
     
     }
+    
+    public int defender() {
 
-    public String tipo( ) {
+    }
+
+    public String tipo() {
     
     }
 
-    public String toString( ) {
+    public String toString() {
 
     }
 }

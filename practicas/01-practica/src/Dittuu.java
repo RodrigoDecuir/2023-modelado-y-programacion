@@ -3,7 +3,7 @@ public class Dittuu {
     private int puntosAtaque;
     private DittuuAtaque dittuu;
 
-    public Dittuu( ) {
+    public Dittuu() {
     
     }
 
@@ -14,12 +14,15 @@ public class Dittuu {
     public void atacar(Personaje enemigo) {
      
     }
+    
+    public int defender() {
 
-    public String tipo( ) {
+    }
+    public String tipo() {
 
     }
 
-    public String toString( ) {
+    public String toString() {
 
     }
 }

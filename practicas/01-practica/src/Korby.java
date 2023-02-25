@@ -2,8 +2,12 @@ public class Korby {
     private String nombreAtaque;
     private int puntosAtaque;
     private KorbyAtaque korby;
+    
+    public Korby() {
 
-    public KorbyAtaque( ) {
+    }
+
+    public KorbyAtaque() {
         
     }
 
@@ -14,12 +18,16 @@ public class Korby {
     public void atacar(Personaje enemigo) {
         
     }
+    
+    public int defender() {
 
-    public String tipo( ) {
+    }
+
+    public String tipo() {
         
     }
 
-    public String toString( ) {
+    public String toString() {
 
     }
 }

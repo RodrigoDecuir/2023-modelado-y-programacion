@@ -4,10 +4,12 @@ import java.util.LinkedList;
  * Clase para
  * @author tukuwanaminaku
  */
-public class Escenario() {
+public class Escenario implements Sujeto {
+
     LinkedList<Espectador> espectadores = new LinkedList<Espectador>(); 
     LinkedList<Personaje> personajes = new LinkedList<Personaje>(); 
     String movimientos; 
+
     /**
      * Metodo que regresa la lista de espectadores.
      * @return lista de espectadores
@@ -15,6 +17,7 @@ public class Escenario() {
     public LinkedList<Espectador> getEspectadores() {
         return espectadores;
     }
+
     /**
      * Metodo que regresa la lista de personajes.
      * @return lista de personajes

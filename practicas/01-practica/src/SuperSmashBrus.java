@@ -3,7 +3,7 @@
  * implementando patrones Strategy y Observer.
  * @author tukuwanaminaku
  */
-public class SuperSmashBrus() {
+public class SuperSmashBrus {
     public void ...
     public void ...
 

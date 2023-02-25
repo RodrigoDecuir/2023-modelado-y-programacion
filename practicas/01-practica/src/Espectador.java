@@ -4,7 +4,8 @@ import java.io*;
  * Clase para representar al espectador del combate. 
  * @author tukuwanaminaku
  */
-public class Espectador() {
+public class Espectador implements Observador {
+
     private String id_Espectador;
     private String apuesta;
     private Escenario castilloDePeach;
@@ -20,6 +21,7 @@ public class Espectador() {
         castilloDePeach.registrar(this);
         movimiento = castilloDePeach.obtenerMovimiento;
     }
+
     /**
      * Metodo para enviar al espectador el movimiento actual o mas reciente del combate.
      */

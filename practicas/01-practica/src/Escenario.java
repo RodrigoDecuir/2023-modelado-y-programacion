@@ -47,7 +47,10 @@ public class Escenario implements Sujeto {
      */
     public void registrar(Espectador b) {
         espectador.add(b);
-        System.out.println(" ");
+        System.out.println("************************"
+               + "\nCastilloDePeach, el espectador " + b.obtenerId_Espectador()
+               + "ha apostado por el personaje " + b.obtenerApuesta() + "\n"
+               + "************************");
     }
     
     /**
@@ -55,7 +58,11 @@ public class Escenario implements Sujeto {
      * @param b espectador por remover
      */
     public void remover(Espectador b) {
-        System.out.println(" ");
+        System.out.println("************************"
+               + "\nCastilloDePeach, la apuesta a " c.obtenerApuesta()
+               + " del espectador " + b.obtenerId_Espectador()
+               + " ha sido retirada.\n"
+               + "************************");
         espectador.remove(b);
     }
     
@@ -64,9 +71,9 @@ public class Escenario implements Sujeto {
      */
     public void notificar() {
         if(espectador.size() > 0) {
-            System.out.println("
-
-                   ");
+            System.out.println("************************"
+               + "\n****Vista del espectador****\n"
+               + "************************");
             for(Espectador b: espectadores) {
                 b.actualizar();
             }

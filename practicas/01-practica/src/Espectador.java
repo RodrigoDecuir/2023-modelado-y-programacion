@@ -1,7 +1,7 @@
 import java.io*;
 
 /**
- * Clase para representar al espectador del combate. 
+ * Clase para representar al espectador del escenario. 
  * @author tukuwanaminaku
  */
 public class Espectador implements Observador {
@@ -32,25 +32,34 @@ public class Espectador implements Observador {
     }
     
     /**
-     *
+     * Metodo que permite ver el id del espectador. 
+     * @return id del espectador 
      */
     public String obtenerId_Espectador() {
         return id_Espectador; 
     }
 
     /**
-     *
+     * Metodo que permite ver la apuesta realizada por el espectador. 
+     * @return apuesta realizada por el espectador  
      */
     public String obtenerApuesta() {
         return apuesta; 
     }
     
     /**
-     * 
+     * Metodo que saca al espectador del escenario.  
+     */
+    public void sacarDelEscenario() {
+        castilloDePeach.remover(this);  
+    }
+
+    /**
+     * Metodo que muestra informacion del espectador y movimientos de la batalla. 
      */
     public void verMovimiento() {
-        System.out.println("APUESTA A: " + apuesta
+        System.out.println("APUESTA: " + apuesta
                + "\nESPECTADOR: " + id_Espectador
-               + "\nCOMBATE: \n" + movimiento); 
+               + "\nINFORMACION DEL COMBATE: \n" + movimiento); 
     }
 }

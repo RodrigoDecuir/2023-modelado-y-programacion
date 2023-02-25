@@ -3,7 +3,7 @@
  * @author tukuwanaminaku
  */
 public interface Sujeto {
-    public void registrar(Observador b);
-    public void remover(Observador b);
+    public void registrar(Espectador b);
+    public void remover(Espectador b);
     public void notificar();
 }

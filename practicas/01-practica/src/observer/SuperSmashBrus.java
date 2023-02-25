@@ -26,7 +26,7 @@ public class SuperSmashBrus {
         System.out.print("\n");
         castilloDePeach.notificar();
         
-        carmen = new Escenario("carmen", "MeganMan", castilloDePeach);
+        carmen = new Espectador("carmen", "MeganMan", castilloDePeach);
         
         castilloDePeach.setMovimiento("MeganMan mato a Kirby");
         System.out.print("\n");

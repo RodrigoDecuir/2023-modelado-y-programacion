@@ -1,14 +1,14 @@
 import java.util.LinkedList;
 
 /**
- * Clase para 
+ * Clase que permite al espectador ver la batalla. 
  * @author tukuwanaminaku
  */
 public class Escenario implements Sujeto {
 
     LinkedList<Espectador> espectadores = new LinkedList<Espectador>(); 
-    LinkedList<Personaje> personajes = new LinkedList<Personaje>(); 
-    String movimientos; 
+    //LinkedList<Personaje> personajes = new LinkedList<Personaje>(); 
+    public String movimiento; 
 
     /**
      * Metodo que regresa la lista de espectadores.
@@ -22,22 +22,22 @@ public class Escenario implements Sujeto {
      * Metodo que regresa la lista de personajes.
      * @return lista de personajes
      */ 
-    public LinkedList<Personaje> getPersonajes() {
-        return personajes;
-    }
+    //public LinkedList<Personaje> getPersonajes() {
+        //return personajes;
+    //}
    
     /**
      * Metodo que regresa el movimiento actual.
      * @return movimiento actual
      */ 
-    public String getMovimientos() {
+    public String getMovimiento() {
         return movimiento; 
     }
     
     /**
      * Metodo que modifica los movimientos. 
      */
-    public void setMovimientos(String nuevoMovimiento) {
+    public void setMovimiento(String nuevoMovimiento) {
         movimiento = nuevoMovimiento; 
     }
     
@@ -46,10 +46,10 @@ public class Escenario implements Sujeto {
      * @param b espectador por registrar 
      */
     public void registrar(Espectador b) {
-        espectador.add(b);
+        espectadores.add(b);
         System.out.println("************************"
-               + "\nCastilloDePeach, el espectador " + b.obtenerId_Espectador()
-               + "ha apostado por el personaje " + b.obtenerApuesta() + "\n"
+               + "\nCastilloDePeach, el espectador " + b.getId_Espectador()
+               + "ha apostado por el personaje " + b.getApuesta() + "\n"
                + "************************");
     }
     
@@ -59,18 +59,18 @@ public class Escenario implements Sujeto {
      */
     public void remover(Espectador b) {
         System.out.println("************************"
-               + "\nCastilloDePeach, la apuesta a " c.obtenerApuesta()
-               + " del espectador " + b.obtenerId_Espectador()
+               + "\nCastilloDePeach, la apuesta a " + b.getApuesta()
+               + " del espectador " + b.getId_Espectador()
                + " ha sido retirada.\n"
                + "************************");
-        espectador.remove(b);
+        espectadores.remove(b);
     }
     
     /**
      * Metodo que notifica a los espectadores del escenario.
      */
     public void notificar() {
-        if(espectador.size() > 0) {
+        if(espectadores.size() > 0) {
             System.out.println("************************"
                + "\n****Vista del espectador****\n"
                + "************************");

@@ -1,4 +1,4 @@
-import java.io*;
+import java.io.*;
 
 /**
  * Clase para representar al espectador del escenario. 
@@ -6,10 +6,10 @@ import java.io*;
  */
 public class Espectador implements Observador {
 
-    private String id_Espectador;
-    private String apuesta;
-    private Escenario castilloDePeach;
-    private String movimiento;
+    public String id_Espectador;
+    public String apuesta;
+    public Escenario castilloDePeach;
+    public String movimiento;
 
     /**
      * Constructor para inicializar las variables.
@@ -19,7 +19,7 @@ public class Espectador implements Observador {
         this.apuesta = apuesta;
         this.castilloDePeach = castilloDePeach;
         castilloDePeach.registrar(this);
-        movimiento = castilloDePeach.obtenerMovimiento;
+        movimiento = castilloDePeach.getMovimiento();
     }
 
     /**
@@ -27,7 +27,7 @@ public class Espectador implements Observador {
      */
     @Override
     public void actualizar() {
-        movimiento = castilloDePeach.obtenerMovimiento; 
+        movimiento = castilloDePeach.getMovimiento(); 
         verMovimiento();
     }
     
@@ -35,7 +35,7 @@ public class Espectador implements Observador {
      * Metodo que permite ver el id del espectador. 
      * @return id del espectador 
      */
-    public String obtenerId_Espectador() {
+    public String getId_Espectador() {
         return id_Espectador; 
     }
 
@@ -43,7 +43,7 @@ public class Espectador implements Observador {
      * Metodo que permite ver la apuesta realizada por el espectador. 
      * @return apuesta realizada por el espectador  
      */
-    public String obtenerApuesta() {
+    public String getApuesta() {
         return apuesta; 
     }
     

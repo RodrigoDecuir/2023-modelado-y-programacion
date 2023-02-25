@@ -6,7 +6,25 @@
 public class SuperSmashBrus {   
     public static void main(String[] args) { 
         Escenario castilloDePeach = new Escenario();
+         
+        /* Objeto de contexto. */
+        private DittuAtaque dittuu;
+        private KorbyAtaque korby;
+        private MeganManAtaque meganMan;
+
+        System.out.println("***BIENVENIDO AL CASTILLO DE PEACH***"); 
         
+        Math.random... 
+        if(ran = 1) {
+            caso1
+        } else if(ran = 2) {
+            caso2
+        } else if(ran = 3) {
+            caso3
+        } else {
+            System.out.println("Cargando escenario...");
+        }
+
         castilloDePeach.setMovimiento("Test");
         castilloDePeach.notificar();
 

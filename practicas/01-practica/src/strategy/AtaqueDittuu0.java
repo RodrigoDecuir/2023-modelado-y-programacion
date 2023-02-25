@@ -1,5 +1,5 @@
 public class AtaqueDittuu0 implements DittuuAtaque {
-    private String tipoAtaque  
+    private String tipoAtaque; 
     
     public AtaqueDittuu0(String tipoAtaque, Integer puntosAtaque) {
         this.tipoAtaque = tipoAtaque;

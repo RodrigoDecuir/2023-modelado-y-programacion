@@ -1,9 +1,11 @@
 import java.util.Scanner;
 
-public class ZoologicoCheems{
+public class Main {
 
 	/* Objeto de contexto. */
-	private Animal ditto;
+	private DittuuAtaque dittuu;
+    private KorbyAtaque korby;
+    private MeganManAtaque MeganMan;
 
 	private void transformarcion(Animal nuevoAnimal){
 		ditto = nuevoAnimal;

@@ -5,9 +5,9 @@ public class MeganMan {
 
     public MeganMan();
 
-    public ataque(String nombreAtaque, int puntosAtaque) {
+//    public ataque(String nombreAtaque, int puntosAtaque) {
     
-    }
+//    }
 
     public void atacar(Personaje enemigo) {
     

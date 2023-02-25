@@ -7,13 +7,13 @@ public class Korby {
 
     }
 
-    public KorbyAtaque() {
+//    public KorbyAtaque() {
         
-    }
+ //   }
 
-    public ataque(String nombreAtaque, int puntosAtaque) {
+//    public ataque(String nombreAtaque, int puntosAtaque) {
         
-    }
+  //  }
 
     public void atacar(Personaje enemigo) {
         

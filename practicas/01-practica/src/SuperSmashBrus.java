@@ -5,16 +5,15 @@
  */
 public class SuperSmashBrus {   
     public static void main(String[] args) { 
-
         Escenario castilloDePeach = new Escenario();
          
         /* Objeto de contexto. */
-        private DittuAtaque dittuu;
-        private KorbyAtaque korby;
-        private MeganManAtaque meganMan;
+        //private DittuAtaque dittuu;
+        //private KorbyAtaque korby;
+        //private MeganManAtaque meganMan;
 
-        System.out.println("***BIENVENIDO AL CASTILLO DE PEACH***"); 
-        
+    //    System.out.println("***BIENVENIDO AL CASTILLO DE PEACH***"); 
+/*        
         Math.random... 
         if(ran = 1) {
             caso1
@@ -25,7 +24,7 @@ public class SuperSmashBrus {
         } else {
             System.out.println("Cargando escenario...");
         }
-
+*/
         castilloDePeach.setMovimiento("Test");
         castilloDePeach.notificar();
 
@@ -45,7 +44,7 @@ public class SuperSmashBrus {
         System.out.print("\n");
         castilloDePeach.notificar();
         
-        carmen = new Espectador("carmen", "MeganMan", castilloDePeach);
+        //carmen = new Espectador("carmen", "MeganMan", castilloDePeach);
         
         castilloDePeach.setMovimiento("MeganMan mato a Kirby");
         System.out.print("\n");

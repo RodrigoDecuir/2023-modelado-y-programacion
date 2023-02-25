@@ -1,3 +1,6 @@
+/**
+ * Clase para implementar a Dittuu.
+ */
 public class Dittuu {
     private String nombreAtaque;
     private int puntosAtaque;
@@ -7,9 +10,9 @@ public class Dittuu {
     
     }
 
-    public ataque(String nombreAtaque, int puntosAtaque) {
+ //   public ataque(String nombreAtaque, int puntosAtaque) {
         
-    }
+  //  }
 
     public void atacar(Personaje enemigo) {
      

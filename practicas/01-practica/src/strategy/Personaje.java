@@ -1,5 +1,31 @@
 public class Personaje {
-    public String nombreAtaque;
-    public Integer puntosAtaque;
+    private String nombreAtaque;
+    private int puntosAtaque;
     
-    public P
+    public Personaje() {
+
+    }
+    
+    public String ataque(String nombreAtaque, int puntosAtaque){
+
+    }
+    
+    public void atacar(Personaje enemigo) {
+
+    }
+    
+    public int defender() {
+
+    }
+    
+    public String tipo() {
+     
+    }
+    
+    public String estaVivo() {
+    
+    }
+    
+    public string toString() {
+
+    }

@@ -1,11 +1,25 @@
 public class Dittuu {
     private String nombreAtaque;
-    private Integer puntosAtaque;
+    private int puntosAtaque;
     private DittuuAtaque dittuu;
 
-    public Ataque( );
-    public Ataque(nombreAtaque: String, puntosAtaque: Integer);
-    public void atacar(Personaje enemigo);
-    public String tipo( );
-    public String toString( ); 
+    public Dittuu( ) {
+    
+    }
+
+    public Ataque(String nombreAtaque, int puntosAtaque) {
+        
+    }
+
+    public void atacar(Personaje enemigo) {
+     
+    }
+
+    public String tipo( ) {
+
+    }
+
+    public String toString( ) {
+
+    }
 }

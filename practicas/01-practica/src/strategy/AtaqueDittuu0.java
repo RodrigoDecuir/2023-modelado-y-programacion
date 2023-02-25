@@ -1,4 +1,13 @@
 public class AtaqueDittuu0 implements DittuuAtaque {
+    private String tipoAtaque  
+    
+    public AtaqueDittuu0(String tipoAtaque, Integer puntosAtaque) {
+        this.tipoAtaque = tipoAtaque;
+        this.puntosAtaque = puntosAtaque;
+    }
+
+    public void atacar(Personaje Enemigo);
+
 	private String nombre = "Cocodriloki (Aligatorido).";
 	private String reino = "Animalia.";
 	private String clase = "Sauropsida.";

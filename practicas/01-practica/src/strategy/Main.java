@@ -7,7 +7,7 @@ public class Main {
     private KorbyAtaque korby;
     private MeganManAtaque MeganMan;
 
-	private void transformarcion(Animal nuevoAnimal){
+	private void transformacion(Animal nuevoAnimal){
 		ditto = nuevoAnimal;
 	}
 

@@ -75,7 +75,7 @@ public class Robot {
         return leyendoMenu;
     }
 
-	public EstadoRobot getEstadoTomandoOrden() {
+    public EstadoRobot getEstadoTomandoOrden() {
         return tomandoOrden;
     }
 

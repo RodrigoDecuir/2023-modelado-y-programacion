@@ -20,7 +20,7 @@ public class McBurguesas {
                         + "\nEstado actual del robot" + estado + 
                         + "\nAcciones disponibles"
                         + "\nPor favor elige la opcion que deseas ejecutar.";
-		do {
+        do {
             System.out.println(
                 "1.- Activar.\n" +
                 "2.- Caminar.\n" + 
@@ -36,8 +36,8 @@ public class McBurguesas {
                     String opcionUsuario = sc.nextLine();
                         opcion = Integer.parseInt(opcionUsuario);
                         break;
-                    } catch(NumberFormatException ex) {
-                        System.out.println("Por favor elige la opcion VALIDA "
+                } catch(NumberFormatException ex) {
+                    System.out.println("Por favor elige la opcion VALIDA "
                                 + "que deseas ejecutar.\n" + 
                                 "1.- Activar.\n" +
                                 "2.- Caminar.\n" + 

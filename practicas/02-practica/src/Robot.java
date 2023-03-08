@@ -20,6 +20,10 @@ public class Robot {
         cocinando = new TomandoOrden(this);
         estadoActual = new estadoActual(this); 
     }
+
+    public void activar () {
+        this.activar();
+    }
 	
     public void setNuevoEstado(EstadoRobot nuevoEstado) {
         estadoActual = nuevoEstado;

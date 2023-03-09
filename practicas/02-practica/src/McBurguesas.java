@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class McBurguesas {
     public static void main(String[] args) {
         Robot robot = new Robot();
-        Menu menu = new Menu();     
+        Menu menu = new Menu("MenuGeneral");     
 
         Scanner sc = new Scanner(System.in);
         int opcion;

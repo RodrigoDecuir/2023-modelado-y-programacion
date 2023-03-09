@@ -26,7 +26,7 @@ public class Robot {
     }
 	
     public void setNuevoEstado(EstadoRobot nuevoEstado) {
-        estadoActual = nuevoEstado;
+        this.estadoActual = nuevoEstado;
     }
 
     public EstadoRobot getEstadoSuspendido() {

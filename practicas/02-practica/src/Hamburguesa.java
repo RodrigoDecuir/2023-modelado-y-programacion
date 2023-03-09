@@ -48,7 +48,7 @@ public abstract class Hamburguesa {
     }
 
     // Metodo que recibe una pregunta y regresa la respues del cliente
-    private String getUserInput(String question) {
+    public String getUserInput(String question) {
         String answer = null;
         // imprime pregunta
         System.out.print(question);

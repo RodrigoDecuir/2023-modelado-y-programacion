@@ -1,4 +1,4 @@
-public class Original extends Hamburguesas {
+public class Original extends Hamburguesa {
 
     public Original () {
         id = 001;

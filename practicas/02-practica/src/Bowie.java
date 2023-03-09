@@ -1,4 +1,4 @@
-public class Bowie extends Hamburguesas {
+public class Bowie extends Hamburguesa {
 
     public Bowie () {
         id = 8;

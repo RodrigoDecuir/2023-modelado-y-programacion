@@ -1,4 +1,4 @@
-public class McCartney extends Hamburguesas {
+public class McCartney extends Hamburguesa {
 
     public McCartney () {
         id = 005;

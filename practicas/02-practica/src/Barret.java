@@ -1,4 +1,4 @@
-public class Barret extends Hamburguesas {
+public class Barret extends Hamburguesa {
 
     public Barret () {
         id = 002;

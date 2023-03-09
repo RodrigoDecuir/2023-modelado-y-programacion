@@ -1,4 +1,4 @@
-public class MiniBurguer extends Hamburguesas {
+public class MiniBurguer extends Hamburguesa {
 
     public MiniBurguer () {
         id = 003;

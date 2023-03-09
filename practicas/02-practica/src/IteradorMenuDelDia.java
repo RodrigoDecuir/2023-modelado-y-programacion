@@ -1,5 +1,7 @@
+import java.util.ArrayList;
+
 public class IteradorMenuDelDia implements IteradorMenu {
-    private ArrayList<Hamburuesa> hamburguesas;
+    private ArrayList<Hamburguesa> hamburguesas;
     private int posicion;
 
     public IteradorMenuDelDia(ArrayList<hamburguesa> hamburguesas) {

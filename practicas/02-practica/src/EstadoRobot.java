@@ -3,10 +3,10 @@
  */
 public interface EstadoRobot { 
 
-    public void suspendido();
-    public void activo();
-    public void caminando();
-    public void atendiendo();
-    public void cocinando();
+    public void suspender();
+    public void activar();
+    public void caminar();
+    public void atender();
+    public void cocinar();
 
 }

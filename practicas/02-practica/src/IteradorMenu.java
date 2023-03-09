@@ -1,6 +1,7 @@
 /**
- * Interfaz que define los metodos que 
- * deben implementar los iteradores de cada tipo de menu.
+ * Interfaz que define los metodos
+ * necesarios para recorrer los menús. 
+ *
  * @author tukuwanaminaku
  */
 public interface IteradorMenu {
@@ -8,7 +9,6 @@ public interface IteradorMenu {
     public boolean hasNext();
 	/** devuelve el siguiente elemento del menu */
     public Hamburguesa next();
-	/** permite reiniciar la iteracion desde el principio del menu */
+	/** reinicia la iteracion del menu */
     public void reset();
 }
-

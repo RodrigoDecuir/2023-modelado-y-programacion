@@ -11,10 +11,14 @@ public class IteradorMenuEspecial implements IteradorMenu {
     }
 
     public Hamburguesa next() {
-        if (hasNext()) {
-            return enumeration.nextElement();
+        if() {
+             
         }
-        return null;
+
+        //if (hasNext()) {
+         //   return enumeration.nextElement();
+        //}
+        //return null;
     }
     
     public boolean hasNext() {

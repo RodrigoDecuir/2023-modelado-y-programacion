@@ -1,4 +1,5 @@
 import java.util.Iterator;
+import java.util.Hashtable;
 
 public class MenuEspecial {
  

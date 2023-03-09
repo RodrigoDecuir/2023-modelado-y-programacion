@@ -1,4 +1,4 @@
-public class MiniBurguer implements Hamburguesas {
+public class MiniBurguer extends Hamburguesas {
 
     public MiniBurguer () {
         id = 003;

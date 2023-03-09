@@ -1,4 +1,4 @@
-public class Mercury implements Hamburguesas {
+public class Mercury extends Hamburguesas {
 
     public Mercury () {
         id = 006;

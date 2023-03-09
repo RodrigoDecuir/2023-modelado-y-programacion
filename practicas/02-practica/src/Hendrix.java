@@ -1,4 +1,4 @@
-public class Hendrix implements Hamburguesas {
+public class Hendrix extends Hamburguesas {
 
     public Hendrix() {
         id = 9;

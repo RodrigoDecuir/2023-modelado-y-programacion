@@ -16,8 +16,8 @@ public class Robot implements EstadoRobot{
         suspendido = new Suspendido(this); 
         activo = new Activo(this); 
         caminando = new Caminando(this);
-        atendiendo = new LeyendoMenu(this);
-        cocinando = new TomandoOrden(this);
+        atendiendo = new Atendiendo(this);
+        cocinando = new Cocinando(this);
         estadoActual = new estadoActual(this); 
     }
 

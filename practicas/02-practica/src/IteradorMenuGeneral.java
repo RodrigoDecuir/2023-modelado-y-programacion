@@ -8,10 +8,6 @@ public class IteradorMenuGeneral implements IteradorMenu {
         this.posicion = 0;
     } 
 
-    public boolean hasNext() {
-        return posicion < hamburguesas.length;
-    }
-
     public Hamburguesa next() {
         if (hasNext()) {
             Hamburguesa hamburguesa = hamburguesa[posicion];
@@ -20,6 +16,11 @@ public class IteradorMenuGeneral implements IteradorMenu {
         }
         return null;
     }
+
+    public boolean hasNext() {   
+        return posicion < hamburguesas.length;
+    }
+
 }
 
 

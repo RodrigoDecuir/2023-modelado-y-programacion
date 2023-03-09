@@ -19,11 +19,6 @@ public class IteradorMenuDelDia implements IteradorMenu {
     }
 
     public Hamburguesa hasNext() {
-        if (hasNext()) {
-            Hamburguesa hamburguesa = hamburguesas.get(posicion);
-            posicion++;
-            return hamburguesa;
-        }
-        return null;
+        return ;
     }
 }

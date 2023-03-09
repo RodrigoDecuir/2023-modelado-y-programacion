@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public abstract class Hamburgeusas {
+public abstract class Hamburguesas {
 
     int id;
     String nombre;

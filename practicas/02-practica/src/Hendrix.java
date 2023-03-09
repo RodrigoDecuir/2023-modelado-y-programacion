@@ -1,20 +1,20 @@
-public class MiniBurguer implements Hamburguesas {
+public class Hendrix implements Hamburguesas {
 
-    public MiniBurguer () {
-        id = 003;
-        nombre = "MiniBurguer";
-        descripcion = "Es una hamburguesa estilo MiniBurguer... ";
-        precio = 50.00;
+    public Hendrix() {
+        id = 9;
+        nombre = "Hendrix";
+        descripcion = "Es una hamburguesa estilo Hendrix... ";
+        precio = 70.00;
         tieneQueso = true;
         vegetariana = false;
     }
 
     public void preparingProtein () {
-        System.out.println("Preparando mini carne estilo MiniBurguer... ");
+        System.out.println("Preparando mini carne estilo Hendrix... ");
     }
 
     public void addProtein () {
-        System.out.println("Agregando mini carne estilo MiniBurguer... ");
+        System.out.println("Agregando mini carne estilo Hendrix... ");
     }
 
     public boolean customerWantsVegetals () {

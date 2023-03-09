@@ -1,10 +1,10 @@
-public class Original implements Hamburgeusas {
+public class Original implements Hamburguesas {
 
     public Original () {
         id = 001;
         nombre = "Original";
-        descripcion = "Es una hamburguesa... ";
-        precio = 50.00;=
+        descripcion = "Es una hamburguesa estilo original... ";
+        precio = 50.00;
         tieneQueso = true;
         vegetariana = false;
     }

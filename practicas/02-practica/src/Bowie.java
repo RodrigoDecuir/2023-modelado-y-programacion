@@ -1,20 +1,20 @@
-public class MiniBurguer implements Hamburguesas {
+public class Bowie implements Hamburguesas {
 
-    public MiniBurguer () {
-        id = 003;
-        nombre = "MiniBurguer";
-        descripcion = "Es una hamburguesa estilo MiniBurguer... ";
-        precio = 50.00;
+    public Bowie () {
+        id = 8;
+        nombre = "Bowie";
+        descripcion = "Es una hamburguesa estilo Bowie... ";
+        precio = 70.00;
         tieneQueso = true;
         vegetariana = false;
     }
 
     public void preparingProtein () {
-        System.out.println("Preparando mini carne estilo MiniBurguer... ");
+        System.out.println("Preparando mini carne estilo Bowie... ");
     }
 
     public void addProtein () {
-        System.out.println("Agregando mini carne estilo MiniBurguer... ");
+        System.out.println("Agregando mini carne estilo Bowie... ");
     }
 
     public boolean customerWantsVegetals () {

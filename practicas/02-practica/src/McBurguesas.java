@@ -12,70 +12,56 @@ public class McBurguesas {
         Scanner sc = new Scanner(System.in);
         int opcion;
 		
-        System.out.println("***BIENVENIDO A EL RESTAURANTE MCBURGUESAS.***");
-                        + "\nEstado actual del robot" + estado + 
-                        + "\nAcciones disponibles"
-                        + "\nPor favor elige la opcion que deseas ejecutar.";
+        System.out.println("***BIENVENIDO A EL RESTAURANTE MCBURGUESAS.***"
+                        + "\nEstado actual del robot: " + estado + 
+                          "\nAcciones disponibles"
+                        + "\nPor favor elige la opcion que deseas ejecutar.");
         do {
+
             System.out.println(
-                "1.- Activar.\n" +
-                "2.- Caminar.\n" + 
-                "3.- Mostrar menu.\n" + 
-                "4.- Tomar orden.\n" +
-                "5.- Preparar orden.\n" +
-                "6.- Entregar orden. \n"  + 
-                "7.- Suspender. \n" +
-                "0.- Terminar simulacion.\n");
+                "1.- Suspender.\n" +
+                "2.- Activar.\n" + 
+                "3.- Caminar.\n" + 
+                "4.- Atender.\n" +
+                "5.- Cocinar.\n" +
+                "6.- Terminar simulacion.\n");
 
             while(true) {
                 try {
                     String opcionUsuario = sc.nextLine();
                         opcion = Integer.parseInt(opcionUsuario);
                         break;
-                } catch(NumberFormatException ex) {
+                } catch (NumberFormatException ex) {
                     System.out.println("Por favor elige la opcion VALIDA "
-                                + "que deseas ejecutar.\n" + 
-                                "1.- Activar.\n" +
-                                "2.- Caminar.\n" + 
-                                "3.- Mostrar menu.\n" + 
-                                "4.- Tomar orden.\n" +
-                                "5.- Preparar orden. \n" +
-                                "6.- Entregar orden.\n" +
-                                "7.- Suspender.\n" +
-                                "0.- Terminar simulacion.\n");
-                    }
+                        + "que deseas ejecutar.\n" + 
+                        "1.- Suspender.\n" +
+                        "2.- Activar.\n" + 
+                        "3.- Caminar.\n" + 
+                        "4.- Atender.\n" +
+                        "5.- Cocinar.\n" +
+                        "6.- Terminar simulacion.\n");
+                }
             }
 
             switch(opcion) {
                 case 1:
-                    robot.activar();
+                    robot.suspender();
                     break;
 
                 case 2:
-                    robot.caminar();
+                    robot.activar();
                     break;
 
                 case 3:
-                    robot.mostrarMenu();
+                    robot.caminar();
                     break;
 
                 case 4:
-                    robot.tomarOrden();
+                    robot.atender();
                     break;
 
                 case 5:
                     robot.cocinar();
-                    break;
-                    
-                case 6:
-                    robot.entregarOrden();
-                    break;
-
-                case 7:
-                    robot.suspender();
-                    break;
-
-                case 0:
                     break;
 
                 default:
@@ -83,7 +69,7 @@ public class McBurguesas {
                     break;
             }
 
-        } while(opcion != 0);
+        } while (opcion != 6);
         System.out.println("Regresa pronto");
     }
 }

@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Clase contexto de State.
  */
-public class Robot {
+public class Robot implements EstadoRobot{
 	
     private EstadoRobot suspendido;
     private EstadoRobot activo;
@@ -21,10 +21,25 @@ public class Robot {
         estadoActual = new estadoActual(this); 
     }
 
+    public void suspender () {
+        this.suspender();
+    }
+
     public void activar () {
         this.activar();
     }
-	
+    public void caminar () {
+        this.caminar();
+    }
+
+    public void atender() {
+        this.atender();
+    }
+
+    public void cocinar() {
+        this.cocinar();
+    }
+
     public void setNuevoEstado(EstadoRobot nuevoEstado) {
         this.estadoActual = nuevoEstado;
     }

@@ -1,3 +1,5 @@
+import java.util.Enumeration;
+
 public class IteradorMenuEspecial implements IteradorMenu {
     
     private Hashtable<Integer, Hamburguesa> hamburguesas;

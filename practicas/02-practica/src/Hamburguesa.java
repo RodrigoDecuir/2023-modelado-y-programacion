@@ -20,14 +20,9 @@ public abstract class Hamburguesa {
         System.out.println("Agregando pan... ");
     }
 
-    public boolean customerWantsVegetals() {
-        return true;
-    }
+    boolean customerWantsVegetals = true;
 
-    public boolean customerWantsCheese() {
-        return true;
-    }
-
+    boolean customerWantsCheese = true;
 
     public final void prepareBase() {
         addBread();

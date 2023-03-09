@@ -1,6 +1,6 @@
 <div align="justify">
 
-## <p align="center">`Modelado y Programación`</p> <img alt="" align="left" src="https://img.shields.io/github/commit-activity/m/owl4ce/hmg/main?style=flat-square&label=&color=000000&logo=gitbook&logoColor=white&labelColor=000000"/> <img alt="" align="right" src="https://badges.pufler.dev/visits/owl4ce/hmg?style=flat-square&label=&color=000000&logo=github&logoColor=white&labelColor=000000"/>
+## <p align="center">`Modelado y Programación`</p> <img alt="" align="left" src="https://img.shields.io/github/last-commit/rodrigodecuir/https://github.com/RodrigoDecuir/2023-modelado-y-programacion/tree/main?style=flat-square"/> 
 
 ## <samp>TEMARIO</samp>
 

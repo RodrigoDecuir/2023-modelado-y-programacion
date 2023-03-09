@@ -20,16 +20,16 @@ public abstract class Hamburguesa {
         System.out.println("Agregando pan... ");
     }
 
-    boolean customerWantsVegetals() {
+    public boolean customerWantsVegetals() {
         return true;
     }
 
-    boolean customerWantsCheese() {
+    public boolean customerWantsCheese() {
         return true;
     }
 
 
-    final void prepareBase() {
+    public final void prepareBase() {
         addBread();
 
         // Abstracts

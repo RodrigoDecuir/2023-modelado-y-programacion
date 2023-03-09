@@ -7,15 +7,14 @@ public class McBurguesas {
     public static void main(String[] args) {
         Robot robot = new Robot();
         Menu menu = new Menu();     
-        Coccion coccion = new Coccion();
 
         Scanner sc = new Scanner(System.in);
         int opcion;
 		
-        System.out.println("***BIENVENIDO A EL RESTAURANTE MCBURGUESAS.***"
-                        + "\nEstado actual del robot: " + estado + 
-                          "\nAcciones disponibles"
-                        + "\nPor favor elige la opcion que deseas ejecutar.");
+        System.out.println("***BIENVENIDO A EL RESTAURANTE MCBURGUESAS.***");
+                        //+ "\nEstado actual del robot: " + estado + 
+                         // "\nAcciones disponibles"
+                        //+ "\nPor favor elige la opcion que deseas ejecutar.");
         do {
 
             System.out.println(

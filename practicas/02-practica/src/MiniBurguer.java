@@ -18,7 +18,7 @@ public class MiniBurguer extends Hamburguesa {
     }
 
     public boolean customerWantsVegetals () {
-        String Answer = getUserInput("Quiere vegetales? ");
+        String answer = getUserInput("Quiere vegetales? ");
         
         if (answer.toLowerCase().startsWith("y")) {
             return true;
@@ -29,7 +29,7 @@ public class MiniBurguer extends Hamburguesa {
     }
 
     public boolean customerWantsCheese () {
-        String Answer = getUserInput("Quiere queso? ");
+        String answer = getUserInput("Quiere queso? ");
         
         if (answer.toLowerCase().startsWith("y")) {
             return true;

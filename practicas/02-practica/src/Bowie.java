@@ -29,7 +29,7 @@ public class Bowie extends Hamburguesa {
     }
 
     public boolean customerWantsCheese () {
-        String Answer = getUserInput("Quiere queso? ");
+        String answer = getUserInput("Quiere queso? ");
         
         if (answer.toLowerCase().startsWith("y")) {
             return true;

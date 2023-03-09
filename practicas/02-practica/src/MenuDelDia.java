@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class MenuDelDia {
 
     private ArrayList<Hamburguesa> hamburguesas;

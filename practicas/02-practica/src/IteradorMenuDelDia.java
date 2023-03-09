@@ -4,7 +4,7 @@ public class IteradorMenuDelDia implements IteradorMenu {
     private ArrayList<Hamburguesa> hamburguesas;
     private int posicion;
 
-    public IteradorMenuDelDia(ArrayList<hamburguesa> hamburguesas) {
+    public IteradorMenuDelDia(ArrayList<Hamburguesa> hamburguesas) {
         this.hamburguesas = hamburguesas;
         this.posicion = 0;
     }

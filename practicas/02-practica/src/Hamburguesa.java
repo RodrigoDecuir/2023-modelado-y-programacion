@@ -12,6 +12,23 @@ public abstract class Hamburguesa {
     boolean tieneQueso;
     boolean vegetariana;
 
+    void addProtein(){};
+    void addVegetals(){};
+    void addCheese(){};
+
+    void addBread() {
+        System.out.println("Agregando pan... ");
+    }
+
+    boolean customerWantsVegetals() {
+        return true;
+    }
+
+    boolean customerWantsCheese() {
+        return true;
+    }
+
+
     final void prepareBase() {
         addBread();
 
@@ -31,21 +48,6 @@ public abstract class Hamburguesa {
         }
     }
 
-    void addProtein(){};
-    void addVegetals(){};
-    void addCheese(){};
-
-    void addBread() {
-        System.out.println("Agregando pan... ");
-    }
-
-    boolean customerWantsVegetals() {
-        return true;
-    }
-
-    boolean customerWantsCheese() {
-        return true;
-    }
 
     // Metodo que recibe una pregunta y regresa la respues del cliente
     public String getUserInput(String question) {

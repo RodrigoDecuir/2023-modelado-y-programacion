@@ -10,7 +10,7 @@ public class IteradorMenuGeneral implements IteradorMenu {
 
     public Hamburguesa next() {
         if (hasNext()) {
-            Hamburguesa hamburguesa = hamburguesa[posicion];
+            Hamburguesa hamburguesa = Hamburguesa[posicion];
             posicion++;
             return hamburguesa;
         }

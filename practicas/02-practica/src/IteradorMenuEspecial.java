@@ -8,14 +8,14 @@ public class IteradorMenuEspecial implements IteradorMenu {
         this.enumeration = hamburguesas.elements();
     }
 
-    public boolean hasNext() {
-        return enumeration.hasMoreElements();
-    }
-
     public Hamburguesa next() {
         if (hasNext()) {
             return enumeration.nextElement();
         }
         return null;
+    }
+    
+    public boolean hasNext() {
+        return enumeration.hasMoreElements();
     }
 }

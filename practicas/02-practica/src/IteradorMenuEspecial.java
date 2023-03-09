@@ -1,4 +1,5 @@
 import java.util.Enumeration;
+import java.util.Hashtable;
 
 public class IteradorMenuEspecial implements IteradorMenu {
     
@@ -11,14 +12,10 @@ public class IteradorMenuEspecial implements IteradorMenu {
     }
 
     public Hamburguesa next() {
-        if() {
-             
+        if (hasNext()) {
+            return enumeration.nextElement();
         }
-
-        //if (hasNext()) {
-         //   return enumeration.nextElement();
-        //}
-        //return null;
+        return null;
     }
     
     public boolean hasNext() {

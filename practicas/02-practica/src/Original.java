@@ -17,12 +17,11 @@ public class Original extends Hamburguesa {
         System.out.println("Agregando carne original... ");
     }
 
-    public boolean customerWantsVegetals () {
+    public boolean customerWantsVegetals() {
         String answer = getUserInput("Quiere vegetales? ");
         
         if (answer.toLowerCase().startsWith("y")) {
             return true;
-            System.out.println("Agregando vegetales... ");
         } else {
             return false;
         }
@@ -33,7 +32,6 @@ public class Original extends Hamburguesa {
         
         if (answer.toLowerCase().startsWith("y")) {
             return true;
-            System.out.println("Agregando queso... ");
         } else {
             return false;
         }

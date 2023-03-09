@@ -21,8 +21,8 @@ public class Bowie extends Hamburguesa {
         String answer = getUserInput("Quiere vegetales? ");
         
         if (answer.toLowerCase().startsWith("y")) {
+            addVegetals();
             return true;
-            System.out.println("Agregando vegetales... ");
         } else {
             return false;
         }
@@ -32,8 +32,8 @@ public class Bowie extends Hamburguesa {
         String answer = getUserInput("Quiere queso? ");
         
         if (answer.toLowerCase().startsWith("y")) {
+            addCheese();
             return true;
-            System.out.println("Agregando queso... ");
         } else {
             return false;
         }

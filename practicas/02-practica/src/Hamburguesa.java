@@ -12,37 +12,49 @@ public abstract class Hamburguesa {
     boolean tieneQueso;
     boolean vegetariana;
 
-    void addProtein(){};
-    void addVegetals(){};
-    void addCheese(){};
-
-    void addBread() {
-        System.out.println("Agregando pan... ");
-    }
-
-    boolean customerWantsVegetals = true;
-
-    boolean customerWantsCheese = true;
-
-    public final void prepareBase() {
+    public final void prepareHamburguer() {
         addBread();
-
-        // Abstracts
         preparingProtein();
-        addProtein();       // Carnes
+        addProtein();
+        // Hooks
+        if (customerWantsVegetals()) {
+            addVegetals();     
+        }
+        if (customerWantsCheese()) {
+            addCheese();
+        }
+        
         addMayonnaise();
         addKetchup();
         addMustard();
-
-        // Hooks
-        if (customerWantsVegetals) {
-            addVegetals();     
-        }
-        if (customerWantsCheese) {
-            addCheese();
-        }
     }
 
+    void addVegetals() {
+        System.out.println("Agregando vegentales... ");
+    }
+    void addCheese() {
+        System.out.println("Agregando queso... ");
+    }
+    void addBread() {
+        System.out.println("Agregando pan... ");
+    }
+    void addMayonnaise() {
+        System.out.println("Agregando mayonesa... ");
+    }
+    void addKetchup() {
+        System.out.println("Agregando katsup... ");
+    }
+    void addMustard() {
+        System.out.println("Agregando mostaza... ");
+    }
+    boolean customerWantsCheese() {
+        return true;
+    }
+    boolean customerWantsVegetals() {
+        return true;
+    }
+    abstract void preparingProtein();
+    abstract void addProtein();
 
     // Metodo que recibe una pregunta y regresa la respues del cliente
     public String getUserInput(String question) {

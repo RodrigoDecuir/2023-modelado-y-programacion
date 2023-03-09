@@ -18,7 +18,7 @@ public class Robot implements EstadoRobot{
         caminando = new Caminando(this);
         atendiendo = new Atendiendo(this);
         cocinando = new Cocinando(this);
-        estadoActual = new estadoActual(this); 
+        estadoActual = suspendido; 
     }
 
     public void suspender () {

@@ -21,8 +21,8 @@ public class Marley extends Hamburguesa {
         String answer = getUserInput("Quiere vegetales? ");
         
         if (answer.toLowerCase().startsWith("y")) {
-            return true;
             System.out.println("Agregando vegetales... ");
+            return true;
         } else {
             return false;
         }
@@ -32,8 +32,8 @@ public class Marley extends Hamburguesa {
         String answer = getUserInput("Quiere queso? ");
         
         if (answer.toLowerCase().startsWith("y")) {
-            return true;
             System.out.println("Agregando queso... ");
+            return true;
         } else {
             return false;
         }

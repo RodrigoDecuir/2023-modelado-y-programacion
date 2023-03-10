@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class IteradorMenuDelDia implements IteradorMenu {
     private ArrayList<Hamburguesa> hamburguesas;
-    private int posicion;
+    private int posicion ;
 
     public IteradorMenuDelDia(ArrayList<Hamburguesa> hamburguesas) {
         this.hamburguesas = hamburguesas;
@@ -19,6 +19,6 @@ public class IteradorMenuDelDia implements IteradorMenu {
     }
 
     public boolean hasNext() {
-        return new IteradorMenuDelDia(hamburguesas);
+        return posicion <= hamburguesas.size() -1;
     }
 }

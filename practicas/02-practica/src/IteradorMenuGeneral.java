@@ -9,12 +9,12 @@ public class IteradorMenuGeneral implements IteradorMenu {
     } 
 
     public Hamburguesa next() {
+        Hamburguesa siguiente = null;
         if (hasNext()) {
-            Hamburguesa hamburguesa = Hamburguesa[posicion];
-            posicion++;
-            return hamburguesa;
+            siguiente = hamburguesas[posicion++];
         }
-        return null;
+        return siguiente;
+        
     }
 
     public boolean hasNext() {   

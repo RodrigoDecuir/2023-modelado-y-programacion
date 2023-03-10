@@ -10,6 +10,6 @@ public class MenuEspecial {
     }
 
     public IteradorMenu crearIterador() {
-        return hamburguesas.values().iterator();
+        return new IteradorMenuEspecial(hamburguesas);
     }
 }

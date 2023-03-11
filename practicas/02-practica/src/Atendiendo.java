@@ -22,8 +22,8 @@ public class Atendiendo implements EstadoRobot {
 		System.out.println("El robot ha llegado a la mesa del cliente.");
         // aqui debe de tomar la orden
 
+		robot.muestraMenuDelDia();
 		
-
         robot.setNuevoEstado(robot.getEstadoCocinando());
 	}
 

@@ -13,6 +13,7 @@ public class Robot implements EstadoRobot {
     private EstadoRobot atendiendo;
     private EstadoRobot cocinando; 
     private EstadoRobot estadoActual;    
+    private MenuDelDia menuDelDia = new MenuDelDia();
 
     /** */
     public Robot() {

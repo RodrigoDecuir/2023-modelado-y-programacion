@@ -82,7 +82,7 @@ public class Menu {
     public Iterator<Hamburguesa> getIteratorEspecial() {
         return menuEspecial.iterator();
     }
-    
+    /* 
     public void mostrarHamburguesas() {
         for(Hamburguesa hamburguesa : hamburguesas) {
             System.out.println("ID" + hamburguesas.id);
@@ -92,4 +92,5 @@ public class Menu {
             System.out.println("-----------");
         }
     }
+    */
 }

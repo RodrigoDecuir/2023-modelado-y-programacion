@@ -8,7 +8,6 @@ public class McBurguesas {
   
         Robot robot = new Robot();
         Menu menu = new Menu("MenuGeneral");     
-
         Scanner sc = new Scanner(System.in);
         int opcion;
 		

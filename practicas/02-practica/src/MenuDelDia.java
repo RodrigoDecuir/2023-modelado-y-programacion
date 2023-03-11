@@ -13,13 +13,15 @@ public class MenuDelDia {
      * Constructor de MenuDelDia que crea un objeto con una lista vacia de hamburguesa Constructor de MenuDelDia que crea un objeto con una lista vacia de hamburguesas.
      */
     public MenuDelDia() {
+        Hamburguesa original = new Original();
+        Hamburguesa berret = new Barret();
+        Hamburguesa miniBurguer = new MiniBurguer();
+        MenuDelDia.agrega(original);
+        MenuDelDia.agrega(barret);
+        MenuDelDia.agrega(miniBurguer);
     }
 
     private class Iterador implements IteradorMenu {
-
-        private Iteador() {
-            hamburguesas.iterator();
-        }
 
         public boolean tieneSiguiente() {
             return hamburguesas.iterator().hasNext();
@@ -59,6 +61,6 @@ public class MenuDelDia {
      * @return nuevo objeto IteradorMenu para el menu del dia.
      */
     public Iterador crearIterador() {
-        return new Iterador();
+        return hamburguesas.iterator();
     }
 }

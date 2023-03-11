@@ -35,14 +35,10 @@ public class MiniBurguer extends Hamburguesa {
      * Metodo para ver si lleva vegetales.
      */
     public boolean customerWantsVegetals () {
-        String answer = getUserInput("Quiere vegetales? ");
         
-        if (answer.toLowerCase().startsWith("y")) {
-            System.out.println("Agregando vegetales... ");
-            return true;
-        } else {
-            return false;
-        }
+        // Por default lleva vegetales
+        return true;
+        
     }
 
     /**

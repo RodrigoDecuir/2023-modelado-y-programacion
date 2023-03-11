@@ -49,14 +49,10 @@ public class Mercury extends Hamburguesa {
      * Metodo para ver si lleva queso. 
      */
     public boolean customerWantsCheese () {
-        String answer = getUserInput("Quiere queso? ");
         
-        if (answer.toLowerCase().startsWith("y")) {
-            System.out.println("Agregando queso... ");
-            return true;
-        } else {
-            return false;
-        }
+        // Por default lleva queso
+        return true;
+
     }
 
 }

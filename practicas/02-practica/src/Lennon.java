@@ -27,26 +27,16 @@ public class Lennon extends Hamburguesa {
 
     /** Metodo para ver si lleva vegetales. */
     public boolean customerWantsVegetals () {
-        String answer = getUserInput("Quiere vegetales? ");
-        
-        if (answer.toLowerCase().startsWith("y")) {
-            System.out.println("Agregando vegetales... ");
-            return true;
-        } else {
-            return false;
-        }
+
+        // Por default lleva
+        return true;
     }
 
     /** Metodo para ver si lleva queso. */
     public boolean customerWantsCheese () {
-        String answer = getUserInput("Quiere queso? ");
-        
-        if (answer.toLowerCase().startsWith("y")) {
-            System.out.println("Agregando queso... ");
-            return true;
-        } else {
-            return false;
-        }
+
+        // Por default lleva
+        return true;
     }
 
 }

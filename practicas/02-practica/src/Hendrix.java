@@ -1,11 +1,13 @@
 /**
- *
+ * Subclase de Hamburguesa.
  * 
  * @author tukuwanaminaku
  */
 public class Hendrix extends Hamburguesa {
 
-    /** */
+    /**
+     * Constructor que inicializa los atributos de la hamburguesa.
+     */
     public Hendrix() {
         id = 9;
         nombre = "Hendrix";
@@ -15,17 +17,23 @@ public class Hendrix extends Hamburguesa {
         vegetariana = false;
     }
 
-    /** */
+    /**
+     * Metodo para preparar la carne.
+     */
     public void preparingProtein () {
         System.out.println("Preparando mini carne estilo Hendrix... ");
     }
 
-    /** */
+    /**
+     * Metodo para agregar la carne.
+     */
     public void addProtein () {
         System.out.println("Agregando mini carne estilo Hendrix... ");
     }
 
-    /** */
+    /**
+     * Metodo para ver si lleva vegetales.
+     */
     public boolean customerWantsVegetals () {
         String answer = getUserInput("Quiere vegetales? ");
         
@@ -37,7 +45,9 @@ public class Hendrix extends Hamburguesa {
         }
     }
 
-    /** */
+    /**
+     * Metodo para ver si lleva queso.
+     */
     public boolean customerWantsCheese () {
         String answer = getUserInput("Quiere queso? ");
         

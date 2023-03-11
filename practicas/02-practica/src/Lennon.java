@@ -1,10 +1,11 @@
 /**
+ * Subclase de hamburguesa.
  *
  * @author tukuwanaminaku
  */
 public class Lennon extends Hamburguesa {
 
-    /** */
+    /** Constructor para inicializar los atributos. */
     public Lennon () {
         id = 007;
         nombre = "Lennon";
@@ -14,17 +15,17 @@ public class Lennon extends Hamburguesa {
         vegetariana = true;
     }
 
-    /** */
+    /** Metodo para preparar carne. */
     public void preparingProtein () {
         System.out.println("Preparando carne vegetariana estilo Lennon... ");
     }
 
-    /** */
+    /** Metodo para agregar carne. */
     public void addProtein () {
         System.out.println("Agregando carne vegetariana estilo Lennon... ");
     }
 
-    /** */
+    /** Metodo para ver si lleva vegetales. */
     public boolean customerWantsVegetals () {
         String answer = getUserInput("Quiere vegetales? ");
         
@@ -36,7 +37,7 @@ public class Lennon extends Hamburguesa {
         }
     }
 
-    /** */
+    /** Metodo para ver si lleva queso. */
     public boolean customerWantsCheese () {
         String answer = getUserInput("Quiere queso? ");
         

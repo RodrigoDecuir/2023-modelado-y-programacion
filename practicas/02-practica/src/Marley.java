@@ -1,11 +1,13 @@
 /**
- * 
+ * Clase que extiende de la clase abastracta Hamburguesa. 
  *
  * @author tukuwanaminaku
  */
 public class Marley extends Hamburguesa {
 
-    /** */
+    /**
+     * Constructor que inicializa los atributos de la hamburguesa.
+     */
     public Marley () {
         id = 004;
         nombre = "Marley";
@@ -15,17 +17,25 @@ public class Marley extends Hamburguesa {
         vegetariana = true;
     }
 
-    /** */
+    /**
+     * Metodo para preparar la carne vegetariana.
+     */
     public void preparingProtein () {
         System.out.println("Preparando carne vegetariana estilo Marley... ");
     }
 
-    /** */
+    /**
+     * Metodo para agregar la carne vegetariana.
+     */
     public void addProtein () {
         System.out.println("Agregando carne vegetariana estilo Marley... ");
     }
 
-    /** */
+    /**
+     * Metodo para verificar si la hamburguesa lleva vegetales.
+     * 
+     * @return true o false
+     */
     public boolean customerWantsVegetals () {
         String answer = getUserInput("Quiere vegetales? ");
         
@@ -37,7 +47,11 @@ public class Marley extends Hamburguesa {
         }
     }
 
-    /** */
+    /**
+     * Metodo para verificar si la hamburguesa lleva queso.
+     * 
+     * @return true o false
+     */
     public boolean customerWantsCheese () {
         String answer = getUserInput("Quiere queso? ");
         

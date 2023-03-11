@@ -1,10 +1,13 @@
 /**
+ * Subclase de Hamburguesa.
  *
  * @author tukuwanaminaku
  */
 public class Barret extends Hamburguesa {
 
-    /** */
+    /**
+     * Metodo constructor para inicializar los atributos.
+     */
     public Barret () {
         id = 002;
         nombre = "Barret";
@@ -14,17 +17,23 @@ public class Barret extends Hamburguesa {
         vegetariana = true;
     }
     
-    /** */
+    /**
+     * Metodo para preprar carne vegetariana.
+     */
     public void preparingProtein () {
         System.out.println("Preparando carne vegetariana estilo Barret... ");
     }
 
-    /** */
+    /**
+     * Metodo para agregar carne vegetariana.
+     */
     public void addProtein () {
         System.out.println("Agregando carne vegetariana estilo Barret... ");
     }
 
-    /** */
+    /**
+     * Metodo para ver si la hamburguesa lleva vegetales.
+     */
     public boolean customerWantsVegetals () {
         String answer = getUserInput("Quiere vegetales? ");
         
@@ -35,7 +44,10 @@ public class Barret extends Hamburguesa {
             return false;
         }
     }
-
+      
+    /** 
+     * Metodo para ver si la hamburguesa lleva queso.
+     */
     public boolean customerWantsCheese () {
         String answer = getUserInput("Quiere queso? ");
         

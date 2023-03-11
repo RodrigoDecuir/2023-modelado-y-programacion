@@ -1,10 +1,11 @@
 /**
- *
+ * Subclase de Hamburguesa.
  *
  * @author tukuwanaminaku
  */
 public class McCartney extends Hamburguesa {
-
+    
+    /** Constructor para inicializar los atributos. */
     public McCartney () {
         id = 005;
         nombre = "McCartney";
@@ -14,14 +15,17 @@ public class McCartney extends Hamburguesa {
         vegetariana = false;
     }
 
+    /** Metodo para prepara carne. */
     public void preparingProtein () {
         System.out.println("Preparando mini carne estilo McCartney... ");
     }
 
+    /** Metodo para agregar carne. */
     public void addProtein () {
         System.out.println("Agregando mini carne estilo McCartney... ");
     }
 
+    /** Metodo para ver si lleva vegetales. */
     public boolean customerWantsVegetals () {
         String answer = getUserInput("Quiere vegetales? ");
         
@@ -33,6 +37,7 @@ public class McCartney extends Hamburguesa {
         }
     }
 
+    /** Metodo para ver si lleva queso. */
     public boolean customerWantsCheese () {
         String answer = getUserInput("Quiere queso? ");
         

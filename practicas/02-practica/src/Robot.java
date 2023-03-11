@@ -112,10 +112,5 @@ public class Robot implements EstadoRobot {
         return hamburguesa;
     }
 
-    /*
-    public void muestraMenuEspecial() {
-        menuEspecial.muestraHamburguesas();
-    }
-    */
 
 }

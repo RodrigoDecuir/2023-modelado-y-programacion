@@ -38,8 +38,6 @@ public class MenuGeneral {
                 return hamburguesas[i];
             }
         }
-
-        System.out.println("Opcion no valida");
         return null;
     }
 

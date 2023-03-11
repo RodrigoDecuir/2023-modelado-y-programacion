@@ -82,4 +82,14 @@ public class Menu {
     public Iterator<Hamburguesa> getIteratorEspecial() {
         return menuEspecial.iterator();
     }
+    
+    public void mostrarHamburguesas() {
+        for(Hamburguesa hamburguesa : hamburguesas) {
+            System.out.println("ID" + hamburguesas.id);
+            System.out.println("Nombre: " + hamburguesa.nombre);
+            System.out.println("Descripcion: " + hamburguesa.descripcion);
+            System.out.println("Precio: " + hamburguesa.precio);
+            System.out.println("-----------");
+        }
+    }
 }

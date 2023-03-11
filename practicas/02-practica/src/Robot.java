@@ -14,6 +14,7 @@ public class Robot implements EstadoRobot {
     private EstadoRobot cocinando; 
     private EstadoRobot estadoActual;    
     private MenuDelDia menuDelDia = new MenuDelDia();
+    private MenuGeneral menuGeneral = new MenuGeneral();
 
     /** */
     public Robot() {
@@ -87,6 +88,10 @@ public class Robot implements EstadoRobot {
    
     public void muestraMenuDelDia() {
         menuDelDia.muestraHamburguesas();
+    }
+
+    public void muestraMenuGeneral() {
+        menuGeneral.muestraHamburguesas();
     }
 
 }

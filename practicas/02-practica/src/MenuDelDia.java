@@ -40,21 +40,13 @@ public class MenuDelDia {
         hamburguesas.add(hamburguesa);
     }
 
-    public Hamburguesa busca(Hamburguesa hamburguesa) {
-        boolean founded;
+    public Hamburguesa busca(int id) {
 
-        if (hamburguesas.contains(hamburguesa)) {
-            return hamburguesa;
-        }
-
-        /* 
         for (Hamburguesa hamburguesa : hamburguesas) {
-            if (hamburguesa.getID == id) {
-                founded = true;
+            if (hamburguesa.getID() == id) {
                 return hamburguesa;
             }
         }
-        */
 
         System.out.println("Opcion no valida");
         return null;

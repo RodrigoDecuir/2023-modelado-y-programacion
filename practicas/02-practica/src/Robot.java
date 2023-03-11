@@ -22,22 +22,22 @@ public class Robot implements EstadoRobot{
     }
 
     public void suspender () {
-        this.suspender();
+        estadoActual.suspender();
     }
 
     public void activar () {
-        this.activar();
+        estadoActual.activar();
     }
     public void caminar () {
-        this.caminar();
+        estadoActual.caminar();
     }
 
     public void atender() {
-        this.atender();
+        estadoActual.atender();
     }
 
     public void cocinar() {
-        this.cocinar();
+        estadoActual.cocinar();
     }
 
     public void setNuevoEstado(EstadoRobot nuevoEstado) {

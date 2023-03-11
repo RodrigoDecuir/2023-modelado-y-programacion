@@ -18,7 +18,7 @@ public class McBurguesas {
         do {
 
             System.out.println(
-                "1.- Suspender.\n" +
+                "\n1.- Suspender.\n" +
                 "2.- Activar.\n" + 
                 "3.- Caminar.\n" + 
                 "4.- Atender.\n" +
@@ -31,7 +31,7 @@ public class McBurguesas {
                         opcion = Integer.parseInt(opcionUsuario);
                         break;
                 } catch (NumberFormatException ex) {
-                    System.out.println("Por favor elige la opcion VALIDA "
+                    System.out.println("\nPor favor elige la opcion VALIDA "
                         + "que deseas ejecutar.\n" + 
                         "1.- Suspender.\n" +
                         "2.- Activar.\n" + 

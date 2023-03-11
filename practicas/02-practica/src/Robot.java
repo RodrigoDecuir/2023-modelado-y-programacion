@@ -22,7 +22,7 @@ public class Robot implements EstadoRobot {
         caminando = new Caminando(this);
         atendiendo = new Atendiendo(this);
         cocinando = new Cocinando(this);
-        estadoActual = suspendido; 
+        estadoActual = suspendido;
     }
 
     /** */
@@ -85,4 +85,8 @@ public class Robot implements EstadoRobot {
         return estadoActual;
     }
    
+    public void muestraMenuDelDia() {
+        menuDelDia.muestraHamburguesas();
+    }
+
 }

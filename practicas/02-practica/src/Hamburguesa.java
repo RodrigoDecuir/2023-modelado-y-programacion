@@ -115,13 +115,15 @@ public abstract class Hamburguesa {
     }
 
     public void printInfo() {
+        System.out.println("<><><><><><><><><><><><><><><>");
         System.out.println("ID: " + id);
         System.out.println("Nombre: " + nombre);
         System.out.println("Descripcion: " + descripcion);
         System.out.println("Precio: " + precio);
         if (vegetariana) {
             System.out.println(" - Opcion vegetariana - ");
-        } 
+        }
+        System.out.println("<><><><><><><><><><><><><><><>");
     }
 
 }

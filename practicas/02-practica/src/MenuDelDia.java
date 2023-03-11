@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Clase que representa la coleccion de hamburguesas del menu del dia.
@@ -13,14 +14,15 @@ public class MenuDelDia {
      * Constructor de MenuDelDia que crea un objeto con una lista vacia de hamburguesa Constructor de MenuDelDia que crea un objeto con una lista vacia de hamburguesas.
      */
     public MenuDelDia() {
-        Hamburguesa original = new Original();
-        Hamburguesa berret = new Barret();
-        Hamburguesa miniBurguer = new MiniBurguer();
-        MenuDelDia.agrega(original);
-        MenuDelDia.agrega(barret);
-        MenuDelDia.agrega(miniBurguer);
+        Original original = new Original();
+        Barret barret = new Barret();
+        MiniBurguer miniBurguer = new MiniBurguer();
+        hamburguesas.add(original);
+        hamburguesas.add(barret);
+        hamburguesas.add(miniBurguer);
     }
 
+    /*
     private class Iterador implements IteradorMenu {
 
         public boolean tieneSiguiente() {
@@ -32,19 +34,28 @@ public class MenuDelDia {
         }
 
     }
+    */
 
     public void agregar(Hamburguesa hamburguesa) {
         hamburguesas.add(hamburguesa);
     }
 
-    public Hamburguesa busca(int id) {
+    public Hamburguesa busca(Hamburguesa hamburguesa) {
         boolean founded;
+
+        if (hamburguesas.contains(hamburguesa)) {
+            return hamburguesa;
+        }
+
+        /* 
         for (Hamburguesa hamburguesa : hamburguesas) {
-            if (Hamburguesa.getID == id) {
+            if (hamburguesa.getID == id) {
                 founded = true;
                 return hamburguesa;
             }
         }
+        */
+
         System.out.println("Opcion no valida");
         return null;
     }
@@ -60,7 +71,7 @@ public class MenuDelDia {
      * 
      * @return nuevo objeto IteradorMenu para el menu del dia.
      */
-    public Iterador crearIterador() {
+    public Iterator crearIterador() {
         return hamburguesas.iterator();
     }
 }

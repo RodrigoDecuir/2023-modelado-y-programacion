@@ -43,6 +43,16 @@ public class MenuGeneral {
         return null;
     }
 
+    public boolean validaID (int Id) {
+        int i;
+        for (i =0; i <hamburguesas.length; i++) {
+            if (hamburguesas[i].getID() == Id) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     /**
      * Crea un nuevo objeto IteradorMenu para el menu general.
      * 

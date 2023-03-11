@@ -58,6 +58,15 @@ public class MenuDelDia {
         }
     }
 
+    public boolean validaID (int Id) {
+        for (Hamburguesa hamburguesa : hamburguesas) {
+            if (hamburguesa.getID() == Id) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     /**
      * Crea un nuevo objeto IteradorMenu para el menu del dia.
      * 

@@ -36,7 +36,7 @@ public class Cocinando implements EstadoRobot {
 	public void cocinar() {
 		System.out.println("El robot esta cocinando.");
 
-        // Aqui debe cocinar
+        robot.pedido.prepareHamburguer();
 
         robot.setNuevoEstado(robot.getEstadoAtendiendo());
 	}

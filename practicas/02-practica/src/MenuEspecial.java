@@ -1,4 +1,5 @@
 import java.util.Iterator;
+import java.util.Enumeration;
 import java.util.Hashtable;
 
 /**
@@ -9,14 +10,47 @@ import java.util.Hashtable;
 public class MenuEspecial {
  
     /** Hashtable para almacenar las hamburguesas */
-    private Hashtable<Integer, Hamburguesa> hamburguesas = new Hashtable<>();
+    private Hashtable hamburguesas = new Hashtable<Integer, Hamburguesa>();
 
     /** 
      * Constructor que crea una Hashtable vacia para guardar las hamburguesas.
      */
     public MenuEspecial() {
-        hamburguesas = new Hashtable<Integer, Hamburguesa>();
+        /*
+        Lennon lennon = new Lennon();
+        Bowie bowie = new Bowie();
+        Hendrix hendrix = new Hendrix();
+        
+        hamburguesas.put(lennon.getID, lennon);
+        hamburguesas.put(bowie.getID, bowie);
+        hamburguesas.put(hendrix.getID, hendrix);
+        */
     }
+
+    /*
+    public void muestraHamburguesas() {
+        Enumeration<Integer> setOfKeys = hamburguesas.keys();
+        
+        while (setOfKeys.hasMoreElements()) {
+            Hamburguesa hamburguesa = hamburguesas.get(setOfKeys);
+            hamburguesa.printInfo();
+
+            int key = setOfKeys.nextElement();
+        }
+    }
+
+    public Hamburguesa buscaHamburguesa(int id) {
+        Enumeration<Integer> setOfKeys = hamburguesas.keys();
+        
+        while (setOfKeys.hasMoreElements()) {
+            Hamburguesa hamburguesa = hamburguesas.get(setOfKeys);
+            if (id == key) {
+                return hamburguesa;
+            }
+            int key = setOfKeys.nextElement();
+        }
+    }
+    */
 
     /**
      * Crea un nuevo objeto IteradorMenu para el menu especial.

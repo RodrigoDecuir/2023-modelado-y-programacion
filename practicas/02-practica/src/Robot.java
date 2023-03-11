@@ -15,6 +15,9 @@ public class Robot implements EstadoRobot {
     private EstadoRobot estadoActual;    
     private MenuDelDia menuDelDia = new MenuDelDia();
     private MenuGeneral menuGeneral = new MenuGeneral();
+    private MenuEspecial menuEspecial = new MenuEspecial();
+    public int IdPedido;
+    public Hamburguesa pedido;
 
     /** */
     public Robot() {
@@ -93,5 +96,26 @@ public class Robot implements EstadoRobot {
     public void muestraMenuGeneral() {
         menuGeneral.muestraHamburguesas();
     }
+
+    public boolean validaID (int Id) {
+        if (menuDelDia.validaID(Id) || menuGeneral.validaID(Id)) {
+            return true;
+        }
+        return false;
+    }
+
+    public Hamburguesa buscaHamburguesa(int id) {
+        Hamburguesa hamburguesa = menuDelDia.busca(id);
+        if (hamburguesa == null) {
+            hamburguesa = menuGeneral.busca(id);
+        }
+        return hamburguesa;
+    }
+
+    /*
+    public void muestraMenuEspecial() {
+        menuEspecial.muestraHamburguesas();
+    }
+    */
 
 }

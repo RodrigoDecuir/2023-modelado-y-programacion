@@ -26,17 +26,25 @@ public class Atendiendo implements EstadoRobot {
 		System.out.println("El robot ha llegado a la mesa del cliente.");
         // aqui debe de tomar la orden
 
-		System.out.println(" !~~~~~ Menu del dia ~~~~~! ");
+		System.out.println("\n !~~~~~ Menu del dia ~~~~~! ");
 		robot.muestraMenuDelDia();
-		System.out.println(" !~~~~~ Menu General ~~~~~! ");
+		System.out.println("\n !~~~~~ Menu General ~~~~~! ");
 		robot.muestraMenuGeneral();
-		System.out.println(" !~~~~ Menu Especial ~~~~! ");
+		System.out.println("\n !~~~~ Menu Especial ~~~~! ");
+		// robot.muestraMenuEspecial();
 
 		System.out.print("Ingresa el ID de la opcion que deseas: ");
 		id = scan.nextInt();
 		System.out.println("Opcion elegida: " + id);
 
-        robot.setNuevoEstado(robot.getEstadoCocinando());
+		if (robot.validaID(id)) {
+			robot.IdPedido = id;
+			robot.pedido = robot.buscaHamburguesa(id);
+			robot.setNuevoEstado(robot.getEstadoCocinando());
+		} else {
+			System.out.println("\n ! Opcion no valida ...");
+		}
+        
 	}
 
 	public void cocinar() {

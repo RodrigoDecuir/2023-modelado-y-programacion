@@ -1,5 +1,11 @@
+/**
+ *
+ *
+ * @author tukuwanaminaku
+ */
 public class Bowie extends Hamburguesa {
 
+    /** */
     public Bowie () {
         id = 8;
         nombre = "Bowie";
@@ -9,14 +15,17 @@ public class Bowie extends Hamburguesa {
         vegetariana = false;
     }
 
+    /** */
     public void preparingProtein () {
         System.out.println("Preparando mini carne estilo Bowie... ");
     }
 
+    /** */
     public void addProtein () {
         System.out.println("Agregando mini carne estilo Bowie... ");
     }
 
+    /** */
     public boolean customerWantsVegetals () {
         String answer = getUserInput("Quiere vegetales? ");
         
@@ -28,6 +37,7 @@ public class Bowie extends Hamburguesa {
         }
     }
 
+    /** */
     public boolean customerWantsCheese () {
         String answer = getUserInput("Quiere queso? ");
         

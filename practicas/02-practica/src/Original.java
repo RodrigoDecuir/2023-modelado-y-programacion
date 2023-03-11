@@ -1,5 +1,11 @@
+/**
+ *
+ *
+ * @author tukuwanaminaku
+ */
 public class Original extends Hamburguesa {
 
+    /** */
     public Original () {
         id = 001;
         nombre = "Original";
@@ -9,14 +15,17 @@ public class Original extends Hamburguesa {
         vegetariana = false;
     }
 
+    /** */
     public void preparingProtein () {
         System.out.println("Preparando carne original... ");
     }
 
+    /** */
     public void addProtein () {
         System.out.println("Agregando carne original... ");
     }
 
+    /** */
     public boolean customerWantsVegetals() {
         String answer = getUserInput("Quiere vegetales? ");
         
@@ -27,6 +36,7 @@ public class Original extends Hamburguesa {
         }
     }
 
+    /** */
     public boolean customerWantsCheese () {
         String answer = getUserInput("Quiere queso? ");
         

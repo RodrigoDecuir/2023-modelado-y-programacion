@@ -1,5 +1,11 @@
+/**
+ *
+ * 
+ * @author tukuwanaminaku
+ */
 public class Hendrix extends Hamburguesa {
 
+    /** */
     public Hendrix() {
         id = 9;
         nombre = "Hendrix";
@@ -9,14 +15,17 @@ public class Hendrix extends Hamburguesa {
         vegetariana = false;
     }
 
+    /** */
     public void preparingProtein () {
         System.out.println("Preparando mini carne estilo Hendrix... ");
     }
 
+    /** */
     public void addProtein () {
         System.out.println("Agregando mini carne estilo Hendrix... ");
     }
 
+    /** */
     public boolean customerWantsVegetals () {
         String answer = getUserInput("Quiere vegetales? ");
         
@@ -28,6 +37,7 @@ public class Hendrix extends Hamburguesa {
         }
     }
 
+    /** */
     public boolean customerWantsCheese () {
         String answer = getUserInput("Quiere queso? ");
         

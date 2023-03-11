@@ -1,5 +1,11 @@
+/**
+ *
+ *
+ * @author tukuwanaminaku
+ */
 public class Mercury extends Hamburguesa {
 
+    /** */
     public Mercury () {
         id = 006;
         nombre = "Mercury";
@@ -9,14 +15,17 @@ public class Mercury extends Hamburguesa {
         vegetariana = false;
     }
 
+    /** */
     public void preparingProtein () {
         System.out.println("Preparando carne estilo Mercury... ");
     }
 
+    /** */
     public void addProtein () {
         System.out.println("Agregando carne estilo Mercury... ");
     }
 
+    /** */
     public boolean customerWantsVegetals () {
         String answer = getUserInput("Quiere vegetales? ");
         

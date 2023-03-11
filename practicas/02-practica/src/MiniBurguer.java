@@ -1,5 +1,11 @@
+/**
+ * 
+ *
+ * @author tukuwanaminaku
+ */
 public class MiniBurguer extends Hamburguesa {
 
+    /** */
     public MiniBurguer () {
         id = 003;
         nombre = "MiniBurguer";
@@ -9,14 +15,17 @@ public class MiniBurguer extends Hamburguesa {
         vegetariana = false;
     }
 
+    /** */
     public void preparingProtein () {
         System.out.println("Preparando mini carne estilo MiniBurguer... ");
     }
 
+    /** */
     public void addProtein () {
         System.out.println("Agregando mini carne estilo MiniBurguer... ");
     }
 
+    /** */
     public boolean customerWantsVegetals () {
         String answer = getUserInput("Quiere vegetales? ");
         
@@ -28,6 +37,7 @@ public class MiniBurguer extends Hamburguesa {
         }
     }
 
+    /** */
     public boolean customerWantsCheese () {
         String answer = getUserInput("Quiere queso? ");
         

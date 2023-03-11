@@ -1,3 +1,8 @@
+/**
+ *
+ *
+ * @author tukuwanaminaku
+ */
 public class McCartney extends Hamburguesa {
 
     public McCartney () {

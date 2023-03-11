@@ -20,8 +20,9 @@ public class Atendiendo implements EstadoRobot {
 
 	public void atender() {
 		System.out.println("El robot ha llegado a la mesa del cliente.");
-        
         // aqui debe de tomar la orden
+
+		
 
         robot.setNuevoEstado(robot.getEstadoCocinando());
 	}

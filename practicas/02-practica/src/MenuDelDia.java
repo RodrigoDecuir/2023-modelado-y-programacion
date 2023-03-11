@@ -7,20 +7,58 @@ import java.util.ArrayList;
 public class MenuDelDia {
 
     /** Lista de hamburguesas.*/
-    private ArrayList<Hamburguesa> hamburguesas;
+    private ArrayList<Hamburguesa> hamburguesas = new ArrayList<Hamburguesa>();
     
     /** 
      * Constructor de MenuDelDia que crea un objeto con una lista vacia de hamburguesa Constructor de MenuDelDia que crea un objeto con una lista vacia de hamburguesas.
      */
     public MenuDelDia() {
-        hamburguesas = new ArrayList<Hamburguesa>();
     }
+
+    private class Iterador implements IteradorMenu {
+
+        private Iteador() {
+            hamburguesas.iterator();
+        }
+
+        public boolean tieneSiguiente() {
+            return hamburguesas.iterator().hasNext();
+        }
+
+        public void siguiente() {
+            hamburguesas.iterator().next();
+        }
+
+    }
+
+    public void agregar(Hamburguesa hamburguesa) {
+        hamburguesas.add(hamburguesa);
+    }
+
+    public Hamburguesa busca(int id) {
+        boolean founded;
+        for (Hamburguesa hamburguesa : hamburguesas) {
+            if (Hamburguesa.getID == id) {
+                founded = true;
+                return hamburguesa;
+            }
+        }
+        System.out.println("Opcion no valida");
+        return null;
+    }
+
+    public void muestraHamburguesas() {
+        for (Hamburguesa hamburguesa : hamburguesas) {
+            hamburguesa.printInfo();
+        }
+    }
+
     /**
      * Crea un nuevo objeto IteradorMenu para el menu del dia.
      * 
      * @return nuevo objeto IteradorMenu para el menu del dia.
      */
-    public IteradorMenu crearIterador() {
-        return new IteradorMenuDelDia(hamburguesas);
+    public Iterador crearIterador() {
+        return new Iterador();
     }
 }

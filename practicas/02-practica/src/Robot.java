@@ -5,19 +5,13 @@ import java.util.Scanner;
  * 
  * @author tukuwanaminaku
  */
-public class Robot implements EstadoRobot{
+public class Robot implements EstadoRobot {
 	
-    /** */
     private EstadoRobot suspendido;
-    /** */
     private EstadoRobot activo;
-    /** */
     private EstadoRobot caminando;
-    /** */
     private EstadoRobot atendiendo;
-    /** */
     private EstadoRobot cocinando; 
-    /** */
     private EstadoRobot estadoActual;    
 
     /** */

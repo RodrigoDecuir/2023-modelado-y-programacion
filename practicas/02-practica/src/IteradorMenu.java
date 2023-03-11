@@ -10,5 +10,5 @@ public interface IteradorMenu {
 	/** devuelve el siguiente elemento del menu */
     public Hamburguesa next();
 	/** reinicia la iteracion del menu */
-    //public void reset();
+    public void reset();
 }
